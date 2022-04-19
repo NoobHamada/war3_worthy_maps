@@ -6,6 +6,9 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 ::selection {
@@ -32,7 +35,7 @@ a {
 
 ul {
     background-color: rgb(36, 119, 192);
-    margin: 0 0 0 0;
+    margin: 0;
     box-shadow: 0 5px 3px black;
     width: 100%;
     position: fixed;
@@ -43,18 +46,18 @@ ul {
 
 li {
     display: inline-block;
-    padding: 1% 5% 1% 5%;
+    padding: 5px 5% 5px 5%;
 }
 
-h1 {
-    margin: 8% 0 0 15%;
-    font-size: 45px;
+main {
+    display: grid;
+    justify-content: center;
+    margin-top: 45px;
+    text-shadow: 0 2px 5px black;
+    font-size: 40px;
 }
 
 .aboutUs {
-    margin: 2% 10% 0 10%;
-    padding: 0 0 5% 0;
-    height: auto;
     background-color: rgb(36, 119, 192);
     background-image: url("../resources/image5.jpg");
     background-repeat: no-repeat;
@@ -69,15 +72,13 @@ h1 {
     background-size: cover;
     opacity: 0.9;
     border-radius: 0 40px 0 40px;
-    filter: grayscale(40%);
-    -webkit-filter: grayscale(40%);
+    filter: grayscale(30%);
+    -webkit-filter: grayscale(30%);
 }
 
 .box {
-    margin: 2% 7% 0 7%;
-    padding: 0 0 5% 0;
-    height: auto;
-    background-color: rgb(36, 119, 192);
+    padding: 0 0 10px 0;
+    background-color: rgb(13, 45, 73);
     box-shadow: 0 3px 3px rgb(0, 0, 0);
 }
 
@@ -92,18 +93,6 @@ p {
 }
 
 /*                            maps.html                              */
-
-
-.predatorsArrive {
-    margin: 2% 10% 0 10%;
-    height: auto;
-    background-color: rgb(39, 137, 223);
-    box-shadow: 0 1px 2px rgb(1, 182, 61);
-    border-radius: 0 30px 0 30px;
-    background-image: url("../resources/image1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 img {
     margin: 3% 2% 3% 3%;
