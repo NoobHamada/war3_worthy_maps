@@ -1,19 +1,25 @@
-html {
-    background-color: rgb(0, 41, 77);
+:root {
+    --first-color: hsla(208, 80%, 5%, 0.8);
+    --second-color: hsla(208, 100%, 50%, 0.1);
+    --third-color: hsla(208, 80%, 25%, 0.3);
+    --fourth-color: hsla(0, 10%, 0%, 0.8);
+    --fifth-color: hsla(208, 100%, 30%, 0.6);
+}
+
+::selection {
+    background-color: var(--first-color);
+    color: rgb(0, 141, 235);
+}
+
+body {
     color: white;
+    background-color: var(--first-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url("../resources/image2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to right, var(--first-color), var(--second-color)), url("../resources/image2.jpg") no-repeat center center / cover;
     background-attachment: fixed;
     display: grid;
     justify-content: center;
     align-items: center;
-}
-
-::selection {
-    background-color: rgb(40, 25, 126);
-    color: rgb(0, 141, 235);
 }
 
 abbr {
@@ -36,7 +42,7 @@ a {
 ul {
     background-color: rgb(36, 119, 192);
     margin: 0;
-    box-shadow: 0 5px 3px black;
+    box-shadow: 0 2px 3px black;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -59,7 +65,7 @@ main {
 
 .aboutUs {
     background-color: rgb(36, 119, 192);
-    background-image: url("../resources/image5.jpg");
+    background: linear-gradient(to right, var(--fifth-color), var(--fourth-color)),  url("../resources/image5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(40%);
@@ -67,7 +73,7 @@ main {
 }
 
 .termsAndAdvantages {
-    background-image: url("../resources/image3.jpg");
+    background: linear-gradient(to right, var(--fourth-color), var(--third-color)), url("../resources/image3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.9;
@@ -77,9 +83,14 @@ main {
 }
 
 .box {
+    margin: 5px 0;
     padding: 0 0 10px 0;
     background-color: rgb(13, 45, 73);
     box-shadow: 0 3px 3px rgb(0, 0, 0);
+}
+
+.maps {
+    background-color: var(--first-color);
 }
 
 h3 {
