@@ -15,7 +15,7 @@ body {
     color: white;
     background-color: var(--first-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(to right, var(--first-color), var(--second-color)), url("../resources/image2.jpg") no-repeat center center / cover;
+    background: linear-gradient(to right, var(--first-color), var(--second-color)), url("../resources/image2.jpg") repeat-y center center / cover;
     background-attachment: fixed;
     display: grid;
     justify-content: center;
