@@ -15,7 +15,7 @@ body {
     color: white;
     background-color: var(--first-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(to right, var(--first-color), var(--second-color)), url("../resources/image2.jpg") repeat-y center center / cover;
+    background: linear-gradient(320deg, var(--first-color), var(--second-color)), url("../resources/image2.jpg") repeat-y center center / cover;
     background-attachment: fixed;
     display: grid;
     justify-content: center;
@@ -99,29 +99,78 @@ h3 {
 }
 
 p {
-    padding: 0 3% 0 4%;
+    padding: 0 5%;
     font-size: 19px;
 }
 
 /*                            maps.html                              */
 
-img {
+/* img {
     margin: 3% 2% 3% 3%;
     opacity: 0.9;
     float: left;
     box-shadow: 0 4px 6px black;
+} */
 
+.container {
+    width: 200px;
+    margin: 10px 10px;
+    perspective: 700px;
+}
+
+.square {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+.square:hover {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.front {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+}
+
+.back {
+    background-color: black;
 }
 
 .author {
-    margin: 0 0 0 35%;
     font-size: small;
     text-transform: lowercase;
-    opacity: 0.7;
-    font-weight: lighter;
 }
 
 .download {
+    margin: 5px 10px;
     color: rgb(39, 137, 223);
     text-transform: uppercase;
     font-weight: 700;
