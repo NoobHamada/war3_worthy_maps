@@ -1,4 +1,5 @@
 :root {
+    --main-color: rgb(39, 130, 209);
     --first-color: hsla(208, 80%, 5%, 0.8);
     --second-color: hsla(208, 100%, 50%, 0.1);
     --third-color: hsla(208, 80%, 25%, 0.3);
@@ -40,7 +41,7 @@ a {
 }
 
 ul {
-    background-color: rgb(36, 119, 192);
+    background-color: var(--main-color);
     margin: 0;
     box-shadow: 0 2px 3px black;
     width: 100%;
@@ -64,7 +65,7 @@ main {
 }
 
 .aboutUs {
-    background-color: rgb(36, 119, 192);
+    background-color: var(--main-color);
     background: linear-gradient(to right, var(--fifth-color), var(--fourth-color)),  url("../resources/image5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,7 +164,7 @@ p {
 
 .download {
     margin: 5px 10px;
-    color: rgb(39, 137, 223);
+    color: var(--main-color);
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: underline;
