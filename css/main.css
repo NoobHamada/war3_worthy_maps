@@ -58,7 +58,7 @@ li {
 main {
     display: grid;
     justify-content: center;
-    margin-top: 45px;
+    margin: 45px 0 20px 0;
     text-shadow: 0 2px 5px black;
     font-size: 40px;
 }
@@ -76,7 +76,6 @@ main {
     background: linear-gradient(to right, var(--fourth-color), var(--third-color)), url("../resources/image3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
     border-radius: 0 40px 0 40px;
     filter: grayscale(30%);
     -webkit-filter: grayscale(30%);
@@ -105,17 +104,10 @@ p {
 
 /*                            maps.html                              */
 
-/* img {
-    margin: 3% 2% 3% 3%;
-    opacity: 0.9;
-    float: left;
-    box-shadow: 0 4px 6px black;
-} */
-
 .container {
     width: 200px;
     margin: 10px 10px;
-    perspective: 700px;
+    perspective: 600px;
 }
 
 .square {
@@ -134,11 +126,11 @@ p {
 }
 
 .square:hover {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
 }
 
 .face {
@@ -153,11 +145,11 @@ p {
 }
 
 .front {
-    transform: rotateY(-180deg);
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
 }
 
 .back {
