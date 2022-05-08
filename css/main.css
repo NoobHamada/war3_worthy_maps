@@ -108,7 +108,7 @@ p {
 .container {
     width: 200px;
     margin: 10px 10px;
-    perspective: 600px;
+    perspective: 500px;
 }
 
 .square {
@@ -127,14 +127,14 @@ p {
 }
 
 .square:hover {
-    transform: rotateX(-180deg);
-    -webkit-transform: rotateX(-180deg);
-    -moz-transform: rotateX(-180deg);
-    -ms-transform: rotateX(-180deg);
-    -o-transform: rotateX(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
 }
 
-.face {
+.maps > .container > .square > div {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -146,11 +146,11 @@ p {
 }
 
 .front {
-    transform: rotateX(-180deg);
-    -webkit-transform: rotateX(-180deg);
-    -moz-transform: rotateX(-180deg);
-    -ms-transform: rotateX(-180deg);
-    -o-transform: rotateX(-180deg);
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 .back {
