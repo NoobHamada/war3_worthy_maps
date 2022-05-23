@@ -5,6 +5,7 @@
     --third-color: hsla(208, 80%, 25%, 0.3);
     --fourth-color: hsla(0, 10%, 0%, 0.8);
     --fifth-color: hsla(208, 100%, 30%, 0.6);
+    --main-font-size: 20px;
 }
 
 ::selection {
@@ -15,7 +16,6 @@
 body {
     color: white;
     background-color: var(--first-color);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: linear-gradient(320deg, var(--first-color), var(--second-color)), url("../resources/image2.jpg") repeat-y center center / cover;
     background-attachment: fixed;
     display: grid;
@@ -49,22 +49,21 @@ ul {
     z-index: 1;
     top: 0%;
     left: 0%;
-}
-
-li {
-    display: inline-block;
-    padding: 5px 5% 5px 5%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    list-style: none;
 }
 
 main {
     display: grid;
     justify-content: center;
-    margin: 45px 0 20px 0;
+    line-height: 4;
     text-shadow: 0 2px 5px black;
     font-size: 40px;
 }
 
-.aboutUs {
+#aboutUs {
     background-color: var(--main-color);
     background: linear-gradient(to right, var(--fifth-color), var(--fourth-color)),  url("../resources/image5.jpg");
     background-repeat: no-repeat;
@@ -73,13 +72,18 @@ main {
     -webkit-filter: grayscale(40%);
 }
 
-.termsAndAdvantages {
+#termsAndAdvantages {
     background: linear-gradient(to right, var(--fourth-color), var(--third-color)), url("../resources/image3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 40px 0 40px;
     filter: grayscale(30%);
     -webkit-filter: grayscale(30%);
+}
+
+div > li {
+    display: inline-block;
+    padding: 5px 5% 5px 5%;
 }
 
 .box {
@@ -89,10 +93,6 @@ main {
     box-shadow: 0 3px 3px rgb(0, 0, 0);
 }
 
-.maps {
-    background-color: var(--first-color);
-}
-
 h3 {
     padding: 2%;
     text-transform: uppercase;
@@ -100,15 +100,21 @@ h3 {
 
 p {
     padding: 0 5%;
-    font-size: 19px;
+    font-size: var(--main-font-size);
+    font-weight: var(--main-font-weight);
 }
 
 /*                            maps.html                              */
 
+
+.maps {
+    background-color: var(--first-color);
+}
+
 .container {
     width: 200px;
     margin: 10px 10px;
-    perspective: 500px;
+    perspective: 400px;
 }
 
 .square {
@@ -145,7 +151,7 @@ p {
     -webkit-backface-visibility: hidden;
 }
 
-.front {
+.back {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -153,7 +159,7 @@ p {
     -o-transform: rotateY(180deg);
 }
 
-.back {
+.front {
     background-color: black;
 }
 
@@ -168,4 +174,26 @@ p {
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 150px;
+        margin: 10px 10px;
+        perspective: 700px;
+    }
+    .square {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 150px;
+        transition: 0.8s;
+        transform-style: preserve-3d;
+        -webkit-transition: 0.8s;
+        -moz-transition: 0.8s;
+        -ms-transition: 0.8s;
+        -o-transition: 0.8s;
+    }
 }
