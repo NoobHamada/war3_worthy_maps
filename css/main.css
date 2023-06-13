@@ -88,9 +88,14 @@ div > li {
 
 .box {
     margin: 5px 0;
-    padding: 0 0 10px 0;
+    padding: 0 0 80px 0;
     background-color: rgb(13, 45, 73);
-    box-shadow: 0 3px 3px rgb(0, 0, 0);
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 h3 {
