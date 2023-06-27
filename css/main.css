@@ -68,6 +68,8 @@ main {
     background: linear-gradient(to right, var(--fifth-color), var(--fourth-color)),  url("../resources/image5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    top: -500px;
     filter: grayscale(40%);
     -webkit-filter: grayscale(40%);
 }
