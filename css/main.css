@@ -177,11 +177,6 @@ p {
     background-color: black;
 }
 
-.author {
-    font-size: small;
-    text-transform: lowercase;
-}
-
 .download {
     margin: 5px 10px;
     color: var(--main-color);
