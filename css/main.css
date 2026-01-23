@@ -194,18 +194,18 @@ p {
 }
 
 .obelisk-control-img {
-    min-width: 300px;
-    min-height: 200px;
-    max-width: 580px;
-    max-height: 280px;
+    min-width: 30%;
+    min-height: 22%;
+    max-width: 40%;
+    max-height: 35%;
     border-radius: 5px;
     transition: 0.2s;
 }
 .obelisk-control-img:hover {
-    min-width: 310px;
-    min-height: 205px;
-    max-width: 615px;
-    max-height: 305px;
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 100%;
+    max-height: 100%;
     transition: 0.2s;
 }
 
